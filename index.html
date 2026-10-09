@@ -242,7 +242,7 @@ function addRow(role, text, first=true, last=true, isErr=false){
   const row = document.createElement("div");
   row.className = `row ${role}` + (first ? " first" : "") + (last ? " last" : "");
   if(role === "them"){
-    if(last){ const a = document.createElement("div"); a.className="avatar sm"; a.textContent="태"; row.appendChild(a); }
+    if(last){ const a = document.createElement("div"); a.className="avatar sm"; a.textContent="예"; row.appendChild(a); }
     else { const s = document.createElement("div"); s.className="spacer"; row.appendChild(s); }
   }
   const b = document.createElement("div");
@@ -257,7 +257,7 @@ function showTyping(){
   const row = document.createElement("div");
   row.className = "row them typing first last";
   row.id = "typing";
-  row.innerHTML = '<div class="avatar sm">태</div><div class="bubble"><i></i><i></i><i></i></div>';
+  row.innerHTML = '<div class="avatar sm">예</div><div class="bubble"><i></i><i></i><i></i></div>';
   chat.appendChild(row);
   scrollDown();
   $("status").textContent = "입력 중...";
