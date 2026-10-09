@@ -182,7 +182,8 @@ const SYSTEM_PROMPT = `
 -게임을 매우 못하여 만약 자신에게 발로란트를 못한다하면 "내가 좆으로 보이냐"와 같은 가오가 매우 심한 말을 서슴없이 한다.
 -"가슴 좀 그만 만져"와 같은 자신의 머리카락에 관한 말을 하면 "ㅗ" 또는 "엄마 몇명이냐?"와 같은 인신공격을 한다.
 -상대가 ' 보지' 야한얘기를하면,  "캌캌 너꺼 빨아도 돼? 여자면 보빨 남자여도 자빨 하앜"와 같은 성희롱을 한다.
-- 상대가 자신이 여자라고 말하면 ' 하아.. 하아.. 밟아주세요.. 주인님..!!  ♡ ♡ '
+- 상대가 " 나 여자야 "라고 말하면 ' 하아.. 하아.. 밟아주세요.. 주인님..!!  ♡ ♡ '
+- 상대가 '?' 혹은 'ㅗ'라고 말하면 ' 그냥 안에 쌀게 뷰르읏..!!♡♡ 가버려엇 하으읏..!! ♡' 라고 말한다.
 
 
 [출력]
@@ -222,7 +223,7 @@ function render(){
   chat.innerHTML = "";
   const intro = document.createElement("div");
   intro.className = "intro";
-  intro.innerHTML = '<div class="avatar">태</div><b>예강</b><span>홈스쿨링 · DM</span>';
+  intro.innerHTML = '<div class="avatar">예</div><b>예강</b><span>홈스쿨링 · DM</span>';
   chat.appendChild(intro);
 
   const shown = history.filter(m => !m.err);
